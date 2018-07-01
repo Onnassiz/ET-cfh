@@ -21,7 +21,7 @@ gulp.task('nodemon', () => {
   nodemon({
     verbose: true,
     script: 'server.js',
-    ignore: ['README.md', 'node_modules/**', 'public/lib/**', '.DS_Store'],
+    ignore: ['README.md', 'node_modules/', '.DS_Store'],
     ext: 'js html jade scss css',
     watch: ['app', 'config', 'public', 'server.js'],
     delayTime: 1,
